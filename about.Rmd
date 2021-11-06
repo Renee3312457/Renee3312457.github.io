@@ -1,9 +1,20 @@
 ---
 title: "About"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
 ---
 
-### About this site
+## This is Renee's website
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
+I am Renee, a first-year biostatistics Master student in Columbia University.
 
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
+Here's my cat, Mochi:
+![](image/Mochi1.jpeg)
+![](image/Mochi2.jpeg)
+
+## My academic and professional experience
+
+[resume](resume.html)
