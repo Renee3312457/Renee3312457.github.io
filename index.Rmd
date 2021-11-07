@@ -18,3 +18,7 @@ Here's my cat, Mochi:
 ## My academic and professional experience
 
 [resume](resume.html)
+
+## Problem 2: Instacart Data Visualization
+
+[Visualization](Dashboard.html)

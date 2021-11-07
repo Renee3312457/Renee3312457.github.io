@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "index"
+    - text: "About"
       href: index.html
     - icon: fa-envelope fa-lg
       href: mailto:<Renee3312457@gmail.com>
