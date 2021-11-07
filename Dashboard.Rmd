@@ -24,7 +24,10 @@ instacart %>%
   count(aisle, name='n_orders') %>%
   filter(n_orders > 10000) %>%
   mutate(aisle = fct_reorder(aisle, -n_orders)) %>%
-  plot_ly(x = ~aisle, y = ~n_orders, color = ~aisle, type = "bar", colors = "viridis")
+  plot_ly(x = ~aisle, y = ~n_orders, color = ~aisle, type = "bar", colors = "viridis") %>%
+  layout(title = "Number of orders for aisles with > 10,000 orders",
+         xaxis = list(title = "Aisle"),
+         yaxis = list(title = "Number of orders"))
 ```
 
 Column {data-width=400}
@@ -34,8 +37,11 @@ Column {data-width=400}
 ```{r}
 
 instacart %>%
-count(order_hour_of_day, name = 'n_orders') %>%
-    plot_ly(x = ~order_hour_of_day, y = ~n_orders, type = 'scatter', mode = 'lines', colors = "viridis")
+  count(order_hour_of_day, name = 'n_orders') %>%
+  plot_ly(x = ~order_hour_of_day, y = ~n_orders, type = 'scatter', mode = 'lines', colors = "viridis") %>%
+  layout(title = "Number of orders by hour of day",
+         xaxis = list(title = "Hour of day"),
+         yaxis = list(title = "Number of orders"))
 ```
 
 ### Chart C
@@ -45,6 +51,9 @@ count(order_hour_of_day, name = 'n_orders') %>%
 instacart %>%
   count(order_id, order_dow, name = 'n_orders') %>%
   sample_n(1000) %>%
-  plot_ly(x = ~order_dow, y = ~n_orders, type = "box", colors = "viridis")
+  plot_ly(x = ~order_dow, y = ~n_orders, type = "box", colors = "viridis") %>%
+  layout(title = "Number of items in an order, grouped by day of week",
+         xaxis = list(title = "Day of week"),
+         yaxis = list(title = "Number of items per order"))
 ```
 

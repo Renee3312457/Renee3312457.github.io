@@ -21,4 +21,4 @@ Here's my cat, Mochi:
 
 ## Problem 2: Instacart Data Visualization
 
-[Visualization](Dashboard.html)
+[Visualization](dashboard.html)
