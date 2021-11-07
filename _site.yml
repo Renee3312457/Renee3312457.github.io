@@ -5,10 +5,14 @@ navbar:
   right:
     - text: "About"
       href: index.html
+    - text: "Resume"
+      href: resume.html
+    - text: "Visualization"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<Renee3312457@gmail.com>
     - icon: fa-github fa-lg
-      href: http://github.com/<Renee3312457>/
+      href: http://github.com/Renee3312457/
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/renee-wang-3716201b3/
 output:
